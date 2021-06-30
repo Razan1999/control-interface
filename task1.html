@@ -1,0 +1,141 @@
+<html>
+<style>
+  
+.rangeslider{
+    width: 50%;
+}
+  
+.myslider {
+    -webkit-appearance: none;
+    background: #FCF3CF  ;
+    width: 50%;
+    height: 20px;
+    opacity: 2;
+   }
+  
+  
+.myslider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: #34495E  ;
+    width: 5%;
+    height: 20px;
+}
+  
+  
+.myslider:hover {
+    opacity: 1;
+}
+  
+</style>
+<body>
+  
+  
+<div class="rangeslider">
+  <label for="name" name="engen1">Engen 1</label>
+  <input type="range" name="en1" min="0" max="180" value="0" class="myslider" id="sliderRange">
+  <p>Value: <span id="demo"></span></p>
+  
+</div>
+<!-- ///////////////////////////-->
+<div class="rangeslider">
+  <label for="name" name="engen2">Engen 2</label>
+  <input type="range" name="en2" min="0" max="180" value="0" class="myslider" id="sliderRange2">
+  <p>Value: <span id="demo2"></span></p>
+  
+</div>
+<!-- ///////////////////////////-->
+<div class="rangeslider">
+  <label for="name" name="engen3">Engen 3</label>
+  <input type="range" name="en3" min="0" max="180" value="0" class="myslider" id="sliderRange3">
+  <p>Value: <span id="demo3"></span></p>
+  
+</div>
+<!-- ///////////////////////////-->
+<div class="rangeslider">
+  <label for="name" name="engen4">Engen 4</label>
+  <input type="range" name="en4" min="0" max="180" value="0" class="myslider" id="sliderRange4">
+  <p>Value: <span id="demo4"></span></p>
+  
+</div>
+<!-- ///////////////////////////-->
+<div class="rangeslider">
+  <label for="name" name="engen5">Engen 5</label>
+  <input type="range" name="en5" min="0" max="180" value="0" class="myslider" id="sliderRange5">
+  <p>Value: <span id="demo5"></span></p>
+  
+</div>
+<!-- ///////////////////////////-->
+<div class="rangeslider">
+  <label for="name" name="engen6">Engen 6</label>
+  <input type="range" name="en6" min="0" max="180" value="0" class="myslider" id="sliderRange6">
+  <p>Value: <span id="demo6"></span></p>
+  
+</div>
+  <div><pr> 
+  <input  class="save" type="submit" value = "SAVE" name ="save" >
+  <input  class="on" type="submit" value = "ON" name = "run"> 
+</pr> 
+</div>
+<script>
+var rangeslider = document.getElementById("sliderRange");
+var output = document.getElementById("demo");
+output.innerHTML = rangeslider.value;
+  
+rangeslider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+<!-- ///////////////////////////-->
+<script>
+var rangeslider2 = document.getElementById("sliderRange2");
+var output2 = document.getElementById("demo2");
+output.innerHTML = rangeslider2.value;
+  
+rangeslider2.oninput = function() {
+  output2.innerHTML = this.value;
+}
+</script>
+<!-- ///////////////////////////-->
+<script>
+var rangeslider3 = document.getElementById("sliderRange3");
+var output3 = document.getElementById("demo3");
+output.innerHTML = rangeslider3.value;
+  
+rangeslider3.oninput = function() {
+  output3.innerHTML = this.value;
+}
+</script>
+<!-- ///////////////////////////-->
+<script>
+var rangeslider4 = document.getElementById("sliderRange4");
+var output4 = document.getElementById("demo4");
+output4.innerHTML = rangeslider4.value;
+  
+rangeslider4.oninput = function() {
+  output4.innerHTML = this.value;
+}
+</script>
+<!-- ///////////////////////////-->
+<script>
+var rangeslider5 = document.getElementById("sliderRange5");
+var output5 = document.getElementById("demo5");
+output5.innerHTML = rangeslider5.value;
+  
+rangeslider5.oninput = function() {
+  output5.innerHTML = this.value;
+}
+</script>
+<!-- ///////////////////////////-->
+<script>
+var rangeslider6 = document.getElementById("sliderRange6");
+var output6 = document.getElementById("demo6");
+output6.innerHTML = rangeslider6.value;
+  
+rangeslider6.oninput = function() {
+  output6.innerHTML = this.value;
+}
+</script>
+
+</body>
+</html>
